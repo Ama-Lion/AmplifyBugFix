@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#39523d91;
+}
+
+:root{
+    --amplify-primary-color: #39523D;
+    --amplify-primary-tint: #39523D;
+    --amplify-primary-shade: #39523D;
+}
+
+.MuiDialog-paper {
+    padding: 15px;
+  }
+  
+  button.MuiButton-containedSecondary {
+    margin-bottom: 10px;
+  }
+.FormLabel{
+  font-size:  1rem; 
+  font-weight:  regular !important; 
+  color: black !important;
+  line-height: 1.4 !important;
+}
+
+ .listSubheaderStyle {
+    background-color: #39523D !important; 
+    top: 0px !important;
+    z-index:2 !important; 
+    color: white !important; 
+    top: -2px !important;
+    text-transform: uppercase !important;
+    margin: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .listSubheaderStyle h3{
+   margin: 0;
+  }
+  .listSubheaderStyle img{
+   height: 2%;
+   width: 12%;
+   margin: 0;
+  }
+  .inputdiv {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25) !important ; 
+    border-radius: 15px !important; 
+    margin:20px !important;  
+    padding:10px !important;
+   }
+  .inputText {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25) !important ; 
+    border-radius: 15px !important; 
+    padding: 20px 10px !important;
+    margin: 10px auto !important;
+    width: 90%;
+   }
+   label{
+    line-height: 1.2 !important;
+    margin-left: 10px;
+    color: black !important;
+  }
+
+  .w-40{
+    width: 40% !important;
+  }
+  .w-48{
+    width: 48% !important;
+  }
+
+  .text-center{
+  text-align: center !important;
+  }
+  .stepper{
+    border-radius: 15px !important ;  
+    height: 3px  !important ; 
+  }
+  .questions-container{
+    height: 85vh !important;
+    overflow-y: scroll !important;
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    width: 100% !important;
+  }
+  .spinner-container{
+    display: flex !important; 
+    justify-content: center !important; 
+    align-items: center !important; 
+    height: 85vh !important;
+  }
+  .back-next-container{
+    display: flex !important; 
+    justify-content: center !important; 
+    align-items: center !important; 
+  }
+  .back-next-btn{
+    margin: 10px !important; 
+  }
+  .questions-div{
+    margin: 5px !important; 
+  }
+  .Radio{
+    color: #39523D !important;
+  }
+ 
+  .sommaire-main-container{
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .sommaire-box{
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.055) !important ; 
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .intro-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+  }
+  .sub-question{
+    margin-left: 20px !important;
+    width: 20% !important;
+    background-color: greenyellow;
+  }
+
+
+  
+  

@@ -1,0 +1,564 @@
+type ImpactTerritorial @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q319: String
+  q320: String
+  q321: String
+  q322: String
+  q323: String
+  q324: String
+  q325: String
+  q326: String
+  q327: String
+  q328: String
+  q329: String
+  q330: String
+  q331: String
+  q332: String
+  q332_1: String
+  q332_2: String
+  q332_3: String
+  q332_4: String
+  q332_5: String
+  q332_6: String
+  q332_7: String
+  q332_8: String
+  q332_9: String
+  q333: String
+}
+
+type Exemplarite @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q290: String
+  q291: String
+  q292: String
+  q293: String
+  q294: String
+  q295: String
+  q296: String
+  q297: String
+  q298: String
+  q299: String
+  q300: String
+  q301: String
+  q302: String
+  q303: String
+  q304: String
+  q305: String
+  q306: String
+  q307: String
+  q308: String
+  q309: String
+  q310: String
+  q311: String
+  q312: String
+  q313: String
+  q314: String
+  q315: String
+  q316: String
+  q317: String
+  q318: String
+}
+
+type Acccessibilite @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q281: String
+  q281_1: String
+  q281_2: String
+  q281_3: String
+  q281_4: String
+  q282: String
+  q283: String
+  q284: String
+  q285: String
+  q286: String
+  q287: String
+  q288: String
+  q289: String
+}
+
+type CommunicationResponsable @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q260: String
+  q261: String
+  q262: String
+  q263: String
+  q264: String
+  q265: String
+  q266: String
+  q267: String
+  q268: String
+  q269: String
+  q270: String
+  q271: String
+  q272: String
+  q273: String
+  q274: String
+  q275: String
+  q276: String
+  q277: String
+  q278: String
+  q279: String
+  q280: String
+}
+
+type GestionDesAchats @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q253: String
+  q254: String
+  q255: String
+  q256: String
+  q257: String
+  q258: String
+  q259: String
+}
+
+type Alimentation @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q220: String
+  q221: String
+  q222: String
+  q223: String
+  q224: String
+  q225: String
+  q226: String
+  q227: String
+  q228: String
+  q229: String
+  q230: String
+  q231: String
+  q232: String
+  q233: String
+  q234: String
+  q235: String
+  q236: String
+  q237: String
+  q238: String
+  q239: String
+  q240: String
+  q241: String
+  q242: String
+  q243: String
+  q244: String
+  q245: String
+  q246: String
+  q247: String
+  q248: String
+  q249: String
+  q250: String
+  q251: String
+  q251_1: String
+  q251_2: String
+  q251_3: String
+  q252: String
+  q252_1: String
+  q252_2: String
+  q252_3: String
+}
+
+type BilanCarbone @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q211: String
+  q212: String
+  q213: String
+  q214: String
+  q215: String
+  q216: String
+  q217: String
+  q218: String
+  q219: String
+}
+
+type GestionNumerique @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q192: String
+  q193: String
+  q194: String
+  q195: String
+  q196: String
+  q197: String
+  q198: String
+  q199: String
+  q200: String
+  q201: String
+  q202: String
+  q203: String
+  q204: String
+  q205: String
+  q206: String
+  q207: String
+  q208: String
+  q209: String
+  q210: String
+}
+
+type GestionArchitecturaleEtDesBatiments @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q178: String
+  q179: String
+  q180: String
+  q181: String
+  q182: String
+  q183: String
+  q184: String
+  q185: String
+  q186: String
+  q187: String
+  q187_1: String
+  q187_2: String
+  q187_3: String
+  q187_4: String
+  q187_5: String
+  q188: String
+  q189: String
+  q190: String
+  q191: String
+}
+
+type GestionDeEau @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  q165: String
+  q166: String
+  q167: String
+  q167_1: String
+  q167_2: String
+  q167_3: String
+  q167_4: String
+  q168: String
+  q169: String
+  q170: String
+  q171: String
+  q172: String
+  q173: String
+  q174: String
+  q175: String
+  q176: String
+  q177: String
+  userID: ID!
+}
+
+type GestionDesDechets @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q138: String
+  q139: String
+  q140: String
+  q141: String
+  q141_1: String
+  q141_2: String
+  q141_3: String
+  q142: String
+  q142_1: String
+  q142_2: String
+  q142_3: String
+  q142_4: String
+  q142_5: String
+  q143: String
+  q144: String
+  q145: String
+  q146: String
+  q147: String
+  q148: String
+  q149: String
+  q150: String
+  q150_1: String
+  q150_2: String
+  q150_3: String
+  q150_4: String
+  q151: String
+  q151_1: String
+  q151_2: String
+  q151_3: String
+  q151_4: String
+  q152: String
+  q153: String
+  q154: String
+  q155: String
+  q155_1: String
+  q155_2: String
+  q155_3: String
+  q155_4: String
+  q156: String
+  q157: String
+  q158: String
+  q159: String
+  q160: String
+  q161: String
+  q162: String
+  q163: String
+  q164: String
+}
+
+type GestionEnergetique @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q122: String
+  q123: String
+  q124: String
+  q125: String
+  q126: String
+  q127: String
+  q128: String
+  q129: String
+  q130: String
+  q131: String
+  q132: String
+  q133: String
+  q134: String
+  q135: String
+  q136: String
+  q137: String
+  q138: String
+}
+
+type Transports @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q87: String
+  q88: String
+  q89: String
+  q90: String
+  q91: String
+  q92: String
+  q93: String
+  q94: String
+  q95: String
+  q96: String
+  q97: String
+  q98: String
+  q99: String
+  q100: String
+  q101: String
+  q102: String
+  q103: String
+  q105: String
+  q106: String
+  q107: String
+  q108: String
+  q109: String
+  q110: String
+  q111: String
+  q112: String
+  q113: String
+  q114: String
+  q115: String
+  q116: String
+  q117: String
+  q117_1: String
+  q117_2: String
+  q117_3: String
+  q117_4: String
+  q118: String
+  q119: String
+  q120: String
+  q121: String
+}
+
+type Piloter @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q68: String
+  q69: String
+  q70: String
+  q71: String
+  q72: String
+  q73: String
+  q74: String
+  q75: String
+  q76: String
+  q77: String
+  q78: String
+  q80: String
+  q81: String
+  q82: String
+  q83: String
+  q84: String
+  q85: String
+  q86: String
+}
+
+type VieAuStade @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q43: String
+  q44: String
+  q45: String
+  q46: String
+  q47: String
+  q48: String
+  q49: String
+  q50: String
+  q51: String
+  q52: String
+  q53: String
+  q54: String
+  q55: String
+  q56: String
+  q57: String
+  q58: String
+  q58_1: String
+  q58_2: String
+  q58_3: String
+  q59: String
+  q60: String
+  q60_1: String
+  q60_2: String
+  q60_3: String
+  q61: String
+  q61_1: String
+  q61_2: String
+  q61_3: String
+  q62: String
+  q62_1: String
+  q62_2: String
+  q62_3: String
+  q63: String
+  q63_1: String
+  q63_2: String
+  q63_3: String
+  q64: String
+  q64_1: String
+  q64_2: String
+  q64_3: String
+  q65: String
+  q65_1: String
+  q65_2: String
+  q65_3: String
+  q66: String
+  q67: String
+}
+
+type ProduitsDentretien @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q32: String
+  q32_1: String
+  q32_2: String
+  q32_3: String
+  q32_4: String
+  q33: String
+  q34: String
+  q34_1: String
+  q34_2: String
+  q34_3: String
+  q34_4: String
+  q35: String
+  q36: String
+  q37: String
+  q39: String
+  q40: String
+  q40_1: String
+  q40_2: String
+  q40_3: String
+  q40_4: String
+  q41: String
+}
+
+type GestionDesSols @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q13: String
+  q13_1: String
+  q13_2: String
+  q14: String
+  q15: String
+  q15_1: String
+  q15_2: String
+  q15_3: String
+  q16: String
+  q17: String
+  q18: String
+  q19: String
+  q20: String
+  q21: String
+  q22: String
+  q23: String
+  q24: String
+  q25: String
+  q26: String
+  q27: String
+  q28: String
+  q29: String
+  q30: String
+  q31: String
+}
+
+type RespectDesMlieux @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  userID: ID!
+  q1: String
+  q2: String
+  q3: String
+  q4: String
+  q5: String
+  q6: String
+  q7: String
+  q8: String
+  q9: String
+  q10: String
+  q11: String
+  q12: String
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  nom: String
+  discipline: String
+  date_de_creation: String
+  Statut_juridique_du_club: String
+  budget: String
+  part_allouee_a_la_formation: String
+  nb_total_salarie: String
+  nb_de_personnel_admistrative: String
+  nb_de_staff_professionnels: String
+  nb_de_jouers_professionnels: String
+  nb_de_jouers_en_centre_de_formation: String
+  nb_de_jeunes_jouers_u18: String
+  nb_de_licencies: String
+  nb_des_dirigeants: String
+  nb_de_benevoles_volontaires: String
+  nb_de_supporteur_par_evenement_ou_match: String
+  nb_de_abonnes: String
+  contacts_des_referents: String
+  entretien: String
+  intendance: String
+  mobilitier: String
+  maintenance: String
+  restauration: String
+  evenement_hospiliters: String
+  responsabel_rse_et_dd: String
+  nom_reference_audit: String
+  prenom_reference_audit: String
+  poste_reference_audit: String
+  mail_reference_audit: String
+  telepone_reference_audit: String
+  RespectDesMlieuxes: [RespectDesMlieux] @connection(keyName: "byUser", fields: ["id"])
+  GestionDesSols: [GestionDesSols] @connection(keyName: "byUser", fields: ["id"])
+  ProduitsDentretiens: [ProduitsDentretien] @connection(keyName: "byUser", fields: ["id"])
+  VieAuStades: [VieAuStade] @connection(keyName: "byUser", fields: ["id"])
+  Piloters: [Piloter] @connection(keyName: "byUser", fields: ["id"])
+  Transports: [Transports] @connection(keyName: "byUser", fields: ["id"])
+  GestionEnergetiques: [GestionEnergetique] @connection(keyName: "byUser", fields: ["id"])
+  GestionDesDechets: [GestionDesDechets] @connection(keyName: "byUser", fields: ["id"])
+  GestionArchitecturaleEtDesBatiments: [GestionArchitecturaleEtDesBatiments] @connection(keyName: "byUser", fields: ["id"])
+  GestionNumeriques: [GestionNumerique] @connection(keyName: "byUser", fields: ["id"])
+  BilanCarbones: [BilanCarbone] @connection(keyName: "byUser", fields: ["id"])
+  Alimentations: [Alimentation] @connection(keyName: "byUser", fields: ["id"])
+  GestionDesAchats: [GestionDesAchats] @connection(keyName: "byUser", fields: ["id"])
+  CommunicationResponsables: [CommunicationResponsable] @connection(keyName: "byUser", fields: ["id"])
+  Acccessibilites: [Acccessibilite] @connection(keyName: "byUser", fields: ["id"])
+  Exemplarites: [Exemplarite] @connection(keyName: "byUser", fields: ["id"])
+  ImpactTerritorials: [ImpactTerritorial] @connection(keyName: "byUser", fields: ["id"])
+  GestionDeEaus: [GestionDeEau] @connection(keyName: "byUser", fields: ["id"])
+  nb_de_joueurses_professionnelles: String
+  nb_de_licencie: String
+}
+  
