@@ -1,8 +1,7 @@
 import React from 'react'
 
 import ListSubheader from '@material-ui/core/ListSubheader';
-import { InputRadio, InputRadioPercent } from "../Inputs"
-import TextField from '@material-ui/core/TextField';
+import { InputRadio, TextFieldInput, InputRadioPercent } from "../Inputs"
 
 export default function GestionArchitecturaleEtDesBatiments({ values, handleChange }) {
     return (
@@ -11,7 +10,7 @@ export default function GestionArchitecturaleEtDesBatiments({ values, handleChan
                 <h3>VI.  Gestion architecturale et des bâtiments</h3>
                 <img src="img/logo-final-blanc.png" alt="logo" />
             </ListSubheader>
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q178')} defaultValue={values.q178} label={"178. En quelle année a été construites et/ou rénovées vos insfractures (merci de préciser si construction neuve ou rénovation) ?"} />
+            <TextFieldInput onChange={handleChange('q178')} defaultValue={values.q178} label={"178. En quelle année a été construites et/ou rénovées vos insfractures (merci de préciser si construction neuve ou rénovation) ?"} />
             <InputRadio onChange={handleChange('q179')} defaultValue={values.q179} question="179. Avez-vous déjà fait un bilan énergétique de vos batiments ?" />
             <InputRadio onChange={handleChange('q180')} defaultValue={values.q180} question="180. Votre bâtiment est-il certifié HQE (Haute Qualité Environnementale) / BREEAM In-Use / ou toute autre certification environnementale ?" />
             <InputRadioPercent onChange={handleChange('q181')} defaultValue={values.q181} question="181. Quelle est la part des matériaux éco performants et écologiques dans les constructions ?" />
@@ -27,9 +26,9 @@ export default function GestionArchitecturaleEtDesBatiments({ values, handleChan
             <InputRadio onChange={handleChange('q187_4')} defaultValue={values.q187_4} question="187 |V. Stade" />
             <InputRadio onChange={handleChange('q187_5')} defaultValue={values.q187_5} question="187 V. Gymnase (terrain basket, hand, volley)" />
             <InputRadio onChange={handleChange('q188')} defaultValue={values.q188} question="188. Avez-vous pris des mesures pour améliorer la qualité de l’air intérieur de vos installations ?" />
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q189')} defaultValue={values.q189} label={"189. Si Oui, merci de préciser quelles mesures vous avez prises et dans quel(s) bâtiment(s) :"} />
+            <TextFieldInput onChange={handleChange('q189')} defaultValue={values.q189} label={"189. Si Oui, merci de préciser quelles mesures vous avez prises et dans quel(s) bâtiment(s) :"} />
             <InputRadio onChange={handleChange('q190')} defaultValue={values.q190} question="190. Avez-vous des projets de rénovation / construction ?" />
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q191')} defaultValue={values.q191} label={"191. Si Oui, À quelle échéance ? Allez-vous intégré des normes environnementales dans ces constructions ?"} />
+            <TextFieldInput onChange={handleChange('q191')} defaultValue={values.q191} label={"191. Si Oui, À quelle échéance ? Allez-vous intégré des normes environnementales dans ces constructions ?"} />
         </div>
     )
 }

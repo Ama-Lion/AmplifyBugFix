@@ -1,8 +1,7 @@
 import React from 'react'
-
 import ListSubheader from '@material-ui/core/ListSubheader';
-import { InputRadio, InputRadioPercent } from "../Inputs"
-import TextField from '@material-ui/core/TextField';
+import { Container } from '@material-ui/core';
+import { InputRadio, TextFieldInput, InputRadioPercent } from "../Inputs"
 
 export default function ProduitsDentretien({ values, handleChange } ) {
     return (
@@ -27,7 +26,7 @@ export default function ProduitsDentretien({ values, handleChange } ) {
         <InputRadio onChange={handleChange('q36')} defaultValue={values.q36} question="36. Utilisez-vous (ou votre prestataire) des matériaux d’entretienécoresponsables (ex :  NF-Environnement, EU écolabel...) ou d’origine naturelle (ex : éponges, sac poubelle...) ?" />
         <InputRadioPercent onChange={handleChange('q37')} defaultValue={values.q37} question="37. Quel pourcentage ces produits représentent-ils au sein de votre club ?" />
         <InputRadio onChange={handleChange('q38')} defaultValue={values.q38} question="38. Est-ce  que vous  lavez  les affaires des joueurs de votre club/événement  (affaires  de  matchs/compétition,  affaires d’entrainement, serviettes ?" />
-        <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q39')} defaultValue={values.q39} label={"39. Si  Oui, Utilisez-vous  des  produits respectueux  de l’environnement et labélisé (ex : NF-Environnement,  EU écolabel...) ?"} />
+        <TextFieldInput onChange={handleChange('q39')} defaultValue={values.q39} label={"39. Si  Oui, Utilisez-vous  des  produits respectueux  de l’environnement et labélisé (ex : NF-Environnement,  EU écolabel...) ?"} />
         <InputRadio onChange={handleChange('q40')} defaultValue={values.q40} question="40. Utilisez-vous (ou votre prestataire) des produits d’entretien naturels (vinaigre, bicarbonate, savon, etc.) ?" />
         <InputRadio onChange={handleChange('q40_1')} defaultValue={values.q40_1} question="40 |. Bureaux administratif" />
         <InputRadio onChange={handleChange('q40_2')} defaultValue={values.q40_2} question="40 ||. Centre d’entrainement" />

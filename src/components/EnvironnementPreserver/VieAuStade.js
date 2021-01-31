@@ -1,8 +1,7 @@
 import React from 'react'
 import ListSubheader from '@material-ui/core/ListSubheader';
 
-import { InputRadio,  } from "../Inputs"
-import TextField from '@material-ui/core/TextField';
+import { InputRadio, TextFieldInput } from "../Inputs"
 
 export default function VieAuStade({ values, handleChange } ) {
     return (
@@ -14,13 +13,13 @@ export default function VieAuStade({ values, handleChange } ) {
             </ListSubheader>
 
             <InputRadio onChange={handleChange('q42')} defaultValue={values.q42} question="42. Possédez-vous une machine à café qui n’utilise pas de capsules jetables ?" />
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q43')} defaultValue={values.q43} label={"43. Si Non, Connaissez-vous le nombre de capsules consommer par an ?"} />
+            <TextFieldInput onChange={handleChange('q43')} defaultValue={values.q43} label={"43. Si Non, Connaissez-vous le nombre de capsules consommer par an ?"} />
             <InputRadio onChange={handleChange('q44')} defaultValue={values.q44} question="44. Si, vous utiliser du café moulu avez-vous mis en place un système pour récupérer du marc de café dans l’optique de l’utiliser (compost, jardin...) ?" />
             <InputRadio onChange={handleChange('q45')} defaultValue={values.q45} question="45. Si votre machine à café utilise des gobelets en plastique, avez-vous un système de récupération dans l’optique de recycler ces gobelets ?" />
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q46')} defaultValue={values.q46} label={"46. Pouvez-vous indiquer le nombre de ramettes de papier pour imprimante consommer par an ?"} />
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q47')} defaultValue={values.q47} label={"47. Pouvez-vous indiquer le nombre d'impression par mois ?"} />
+            <TextFieldInput onChange={handleChange('q46')} defaultValue={values.q46} label={"46. Pouvez-vous indiquer le nombre de ramettes de papier pour imprimante consommer par an ?"} />
+            <TextFieldInput onChange={handleChange('q47')} defaultValue={values.q47} label={"47. Pouvez-vous indiquer le nombre d'impression par mois ?"} />
             <InputRadio onChange={handleChange('q48')} defaultValue={values.q48} question="48. Avez-vous  mis en  place  un  système  limitant  le  nombre d’impressions par collaborateurs ?" />
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q49')} defaultValue={values.q49} label={"49. Si oui, qu’avez-vous mis en place ? (Ex : carte à crédit pour l’imprimante)"} />
+            <TextFieldInput onChange={handleChange('q49')} defaultValue={values.q49} label={"49. Si oui, qu’avez-vous mis en place ? (Ex : carte à crédit pour l’imprimante)"} />
             <InputRadio onChange={handleChange('q50')} defaultValue={values.q50} question="50. Choisissez-vous du papier labellisé (FSC, PEFC) et/ou recyclé ?" />
             <InputRadio onChange={handleChange('q51')} defaultValue={values.q51} question="51. La configuration par défaut des imprimantes est-elle recto-verso, noir et blanc, mode brouillon ?" />
             <InputRadio onChange={handleChange('q52')} defaultValue={values.q52} question="52. Avez-vous limité le  nombre d'imprimantes en excluant la possibilité d'en avoir une individuelle ?" />

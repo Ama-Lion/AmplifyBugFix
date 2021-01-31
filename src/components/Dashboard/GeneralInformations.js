@@ -40,7 +40,7 @@ export default class GeneralInformations extends Component {
                 <Container style={{ backgroundColor: "#ffff", width: '70%', borderRadius: "15px", }}>
                     <h1 style={{ textAlign: "center", margin: "10px"}}>Informations générales</h1>
                         {users.map((user) => (
-                            <ListSubheader style={{ top: "0px", zIndex: "2", color: "white", margin: 'auto', backgroundColor: "#ffff" }}>
+                            <ListSubheader key={user.id} style={{ top: "0px", zIndex: "2", color: "white", margin: 'auto', backgroundColor: "#ffff" }}>
                                 <Link to={"/users"} style={{ textDecoration: 'none' }}>
                                     <Button size="small" style={{ backgroundColor: "#e0be40", color: "white", margin: "10px" }}>Tous les clubs</Button>
                                 </Link>
@@ -54,7 +54,7 @@ export default class GeneralInformations extends Component {
                       <TableContainer style={{ overflowY: "scroll", backgroundColor: "#ffff", borderRadius: "15px", height: "80vh", width: '100%' }}>    
                         <Table >
                             {users.map((user) => (
-                                <TableBody>
+                                <TableBody key={user.id} >
                                     <ListSubheader style={{ background: "#39523D", top: "0px", zIndex: "2", color: "white", margin: 'auto' }}>
                                         <h3>Club ou Évènement :</h3>
                                     </ListSubheader>

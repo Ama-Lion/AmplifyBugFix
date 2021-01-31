@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ListSubheader from '@material-ui/core/ListSubheader';
-import { InputRadio, InputRadioPercent } from "../Inputs"
+import { InputRadio, TextFieldInput, InputRadioPercent } from "../Inputs"
 
 export default function GestionDesAchats({ values, handleChange }) {
     return (

@@ -7,10 +7,11 @@ import GestionDesSols from './GestionDesSols';
 import ProduitsDentretien from './ProduitsDentretien';
 import VieAuStade from './VieAuStade';
 
-export default function EnvironnementPreserver( { values, handleChange } ) {
+export class EnvironnementPreserver extends Component {
 
-  return (
-
+  render() {
+    const { values, handleChange } = this.props;
+    return (
       <Container>
          
        <RespectDesMlieux 
@@ -33,8 +34,10 @@ export default function EnvironnementPreserver( { values, handleChange } ) {
       </Container> 
     );
 
+  }
 }
 
+export default EnvironnementPreserver;
 
 
 

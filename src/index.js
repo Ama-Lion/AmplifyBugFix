@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css'
 
-import Amplify from 'aws-amplify'
-import config from './aws-exports'
-Amplify.configure(config)
+import Amplify from "@aws-amplify/core";
+import config from './aws-exports';
+// import Amplify, { DataStore, Predicates } from "@aws-amplify/core";
+// import Amplify, { DataStore, Predicates, Logger } from 'aws-amplify';
+
+Amplify.configure(config);
+// Logger.LOG_LEVEL = 'DEBUG'
+// DataStore.start()
 
 ReactDOM.render(
   <React.StrictMode>

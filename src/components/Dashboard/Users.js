@@ -7,14 +7,11 @@ import Typography from '@material-ui/core/Typography';
 import { CardActionArea } from '@material-ui/core';
 import { Link } from "react-router-dom";
 
-import { Logger } from 'aws-amplify';
 
 import React, { Component } from 'react'
 import { DataStore } from '@aws-amplify/datastore'
 import { User, RespectDesMlieux } from '../../models'
 
-Logger.LOG_LEVEL = 'DEBUG'
-const logger = new Logger('foo');
 
 export default class GeneralInformations extends Component {
     constructor(props) {
@@ -27,23 +24,19 @@ export default class GeneralInformations extends Component {
     }
 
     async componentDidMount() {
-        try {
-            const users = await DataStore.query(User);
-            this.setState({ users: users });
-        } catch(e) {
-            logger.error('error happened', e);
-        }
-        
+
+        const users = await DataStore.query(User);
+        this.setState({ users: users });
+
 
     }
     render() {
         const { users } = this.state;
-        console.log(users)
 
         return (
             <Container style={{ display: "flex", flexWrap: "wrap", }}>
                 {users.map((user) => (
-                    <Card style={{ borderRadius: "15px", margin: "10px", width: "30%" }} variant="outlined" key={user.id}>
+                    <Card style={{ borderRadius: "15px", margin: "10px", width: "30%" }} variant="outlined">
                         <CardActionArea >
                             <CardContent>
                                 <Typography component="h5" >Nom de la structure : {user.nom}</Typography>

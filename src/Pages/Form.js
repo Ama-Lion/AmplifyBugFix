@@ -1,9 +1,7 @@
 // import react and aws stuffs
 import React, { Component } from 'react';
 
-import Amplify from '@aws-amplify/core';
 import { DataStore } from '@aws-amplify/datastore';
-import config from '../aws-exports';
 
 import {   
   ImpactTerritorial,
@@ -56,8 +54,6 @@ const theme = createMuiTheme({
   border: 40,
 });
 
-Amplify.configure(config); 
-DataStore.configure(config);
 
 export class Form extends Component {
 
@@ -882,6 +878,3 @@ export class Form extends Component {
 }
 
 export default Form;
-
-
-

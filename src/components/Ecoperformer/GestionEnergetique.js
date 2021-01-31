@@ -1,8 +1,7 @@
 import React from 'react'
 
 import ListSubheader from '@material-ui/core/ListSubheader';
-import { InputRadio, InputRadioPercent } from "../Inputs"
-import TextField from '@material-ui/core/TextField';
+import { InputRadio, TextFieldInput, InputRadioPercent } from "../Inputs"
 
 export default function GestionEnergetique({ values, handleChange }) {
     return (
@@ -12,12 +11,12 @@ export default function GestionEnergetique({ values, handleChange }) {
                 <img src="img/logo-final-blanc.png" alt="logo" />
             </ListSubheader>
             <InputRadio onChange={handleChange('q122')} defaultValue={values.q122} question="122. Connaissez la consommation électrique annuelle de vos installations ?" />
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q123')} defaultValue={values.q123} label={"123. Si Oui, Pouvez-vous nous l'indiquer (stade, gymnase , centre d'entrainement...) ?"} />
+            <TextFieldInput onChange={handleChange('q123')} defaultValue={values.q123} label={"123. Si Oui, Pouvez-vous nous l'indiquer (stade, gymnase , centre d'entrainement...) ?"} />
             <InputRadio onChange={handleChange('q124')} defaultValue={values.q124} question="124. Avez-vous  mis  en  place  des  mesures  pour  réduire  vos consommations énergétiques ?" />
             <InputRadio onChange={handleChange('q125')} defaultValue={values.q125} question="125. Avez-vous un affichage de consignes (extinction des lumières/ordinateurs, climatisation...) ?" />
             <InputRadio onChange={handleChange('q126')} defaultValue={values.q126} question="126. Avez-vous  un  affichage  d’indicateurs  de consommation visible de tous ?" />
             <InputRadio onChange={handleChange('q127')} defaultValue={values.q127} question="127. Utilisez-vous  majoritairement  des  lampes basse consommation type LED ?" />
-            <TextField   fullWidth className="inputText TextField"t onChange={handleChange('q128')} defaultValue={values.q128} label={"128. Autres ? merci de de préciser :"} />
+            <TextFieldInput onChange={handleChange('q128')} defaultValue={values.q128} label={"128. Autres ? merci de de préciser :"} />
             <InputRadio onChange={handleChange('q129')} defaultValue={values.q129} question="129. Votre club est-il abonné à un fournisseur d'électricité et/ou gaz utilisant des énergies vertes (Enercoop, Ilek, etc.) ?" />
             <InputRadio onChange={handleChange('q130')} defaultValue={values.q130} question="130. Votre club investit-il en faveur des énergies renouvelables lors de la rénovation de ses équipements ? (Énergie solaire, énergie éolienne, énergie hydraulique, biomasse et géothermie)" />
             <InputRadio onChange={handleChange('q131')} defaultValue={values.q131} question="131. Savez-vous quelle est la part des équipements éco-performants (Appareils  économes  en  énergie  de  type  Classe  AA+  au minimum) ?" />
